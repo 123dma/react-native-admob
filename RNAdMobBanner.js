@@ -27,7 +27,7 @@ class AdMobBanner extends Component {
   loadBanner() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this._bannerView),
-      UIManager.RNGADBannerView.Commands.loadBanner,
+      UIManager.getViewManagerConfig("RNDFPBannerView").Commands.loadBanner,
       null,
     );
   }
